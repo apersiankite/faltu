@@ -6,4 +6,12 @@
         <item name="colorPrimary">@color/zoom_primary_color</item>
     </style>
 
+    <style name="text_view_style" parent="Base.TextAppearance.AppCompat">
+        <item name="android:text">@string/default_text</item>
+        <item name="android:textColor">@color/button_green</item>
+        <item name="android:textSize">@dimen/normal_text_size</item>
+
+    </style>
+
+    <dimen name="normal_text_size">16dp</dimen>
 </resources>
