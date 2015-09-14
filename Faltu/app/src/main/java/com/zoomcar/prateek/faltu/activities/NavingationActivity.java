@@ -2,7 +2,7 @@ package com.zoomcar.prateek.faltu.activities;
 
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
-import android.support.v4.view.GravityCompat;
+import android.support.v4.view.MenuItemCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
@@ -54,9 +54,30 @@ public class NavingationActivity extends AppCompatActivity implements Navigation
     public boolean onNavigationItemSelected(MenuItem menuItem) {
         Log.d("prateek","[NavigationItemClicked]"+menuItem.getItemId());
         if(menuItem.getItemId() == R.id.navigation_item_1){
-            mDrawerLayout.closeDrawer(GravityCompat.START);
+            menuItem.setChecked(true);
+            mDrawerLayout.closeDrawers();
             return true;
         }
         return false;
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_activity_navigation, menu);
+        MenuItem filterMenuItem = menu.findItem(R.id.action_filter);
+        MenuItemCompat.setOnActionExpandListener(filterMenuItem, new MenuItemCompat.OnActionExpandListener() {
+            @Override
+            public boolean onMenuItemActionExpand(MenuItem item) {
+                Log.d("prateek","Menu item Expanded");
+                return true;
+            }
+
+            @Override
+            public boolean onMenuItemActionCollapse(MenuItem item) {
+                Log.d("prateek", "Menu item collapsed");
+                return true;
+            }
+        });
+        return true;
     }
 }
