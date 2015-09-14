@@ -1,10 +1,8 @@
 package com.zoomcar.prateek.faltu.activities;
 
-import android.app.ProgressDialog;
 import android.content.Intent;
-import android.graphics.drawable.Drawable;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -13,7 +11,7 @@ import android.widget.Button;
 
 import com.zoomcar.prateek.faltu.R;
 
-public class ComponentActivity extends AppCompatActivity implements View.OnClickListener{
+public class ComponentActivity extends AppCompatActivity implements View.OnClickListener {
     private Toolbar mToolbar;
     private Button mSubmitButton;
 
@@ -21,9 +19,9 @@ public class ComponentActivity extends AppCompatActivity implements View.OnClick
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_component);
-        mToolbar= (Toolbar) findViewById(R.id.app_toolbar);
+        mToolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(mToolbar);
-        mSubmitButton= (Button) findViewById(R.id.button_submit);
+        mSubmitButton = (Button) findViewById(R.id.button_submit);
         mSubmitButton.setOnClickListener(this);
 
     }
@@ -52,7 +50,7 @@ public class ComponentActivity extends AppCompatActivity implements View.OnClick
 
     @Override
     public void onClick(View v) {
-        startActivity(new Intent(this,CustomProgressBarActivity.class));
+        startActivity(new Intent(this, CustomProgressBarActivity.class));
 
     }
 }

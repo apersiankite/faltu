@@ -4,16 +4,15 @@
     android:layout_height="match_parent"
     tools:context="com.zoomcar.prateek.faltu.activities.ComponentActivity">
 
-    <include
-        android:id="@+id/app_toolbar"
-        layout="@layout/layout_toolbar" />
+    <include layout="@layout/layout_toolbar"
+        android:id="@+id/app_toolbar"/>
 
     <TextView
         android:id="@+id/text_header"
         style="@style/text_view_style"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/app_toolbar"
+        android:layout_below="@id/app_toolbar"
         android:layout_marginTop="@dimen/appbar_elevation"
         android:padding="@dimen/app_padding" />
 
@@ -21,12 +20,13 @@
         android:id="@+id/text_input_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/text_header"
+        android:layout_below="@id/text_header"
         android:padding="@dimen/app_padding">
 
         <android.support.v7.widget.AppCompatEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/custom_edit_text"
             android:drawableLeft="@drawable/ic_action_username"
             android:hint="@string/hint_enter_first_name">
 
@@ -40,12 +40,13 @@
         android:id="@+id/text_input_layout2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/text_input_layout"
+        android:layout_below="@id/text_input_layout"
         android:padding="@dimen/app_padding">
 
         <android.support.v7.widget.AppCompatEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/custom_edit_text"
             android:drawableLeft="@drawable/ic_action_username"
             android:hint="@string/hint_enter_last_name">
 
@@ -59,7 +60,7 @@
         android:id="@+id/checkbox_a"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/text_input_layout2"
+        android:layout_below="@id/text_input_layout2"
         android:layout_margin="2dp"
         android:button="@drawable/custom_check_box"
         android:padding="@dimen/app_padding"
@@ -70,7 +71,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/checkbox_a"
+        android:layout_below="@id/checkbox_a"
         android:layout_margin="2dp"
         android:button="@drawable/custom_check_box"
         android:padding="@dimen/app_padding"
@@ -81,7 +82,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/checkbox_b"
+        android:layout_below="@id/checkbox_b"
         android:layout_margin="2dp"
         android:button="@drawable/custom_check_box"
         android:padding="@dimen/app_padding"
@@ -99,15 +100,15 @@
         android:text="@string/default_text" />
 
 
-      <Button
-          android:id="@+id/button_submit"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:layout_alignParentBottom="true"
-          android:textColor="@color/white"
-          android:background="@color/button_green"
-          android:textStyle="bold"
-          android:text="@string/button_submit"/>
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/button_green"
+        android:text="@string/button_submit"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
 
 
 </RelativeLayout>
