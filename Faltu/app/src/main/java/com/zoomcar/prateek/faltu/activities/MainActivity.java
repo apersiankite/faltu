@@ -1,5 +1,6 @@
 package com.zoomcar.prateek.faltu.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -17,6 +18,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        toolbar.setCollapsible(true);
+        toolbar.setNavigationIcon(R.mipmap.ic_launcher);
     }
 
     @Override
@@ -35,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            startActivity(new Intent(this, NavingationActivity.class));
             return true;
         }
 
