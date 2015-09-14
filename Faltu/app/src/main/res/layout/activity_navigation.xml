@@ -28,6 +28,7 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:background="@color/white"
+        android:fitsSystemWindows="true"
         app:itemTextColor="@color/zoom_primary_color">
 
         <RelativeLayout
