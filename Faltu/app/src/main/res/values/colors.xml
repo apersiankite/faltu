@@ -5,4 +5,5 @@
     <color name="transparent">#00000000</color>
     <color name="white">#FFFFFF</color>
     <color name="drawer_item_text">#2CEE3D</color>
+    <color name="button_green">#4CAF50</color>
 </resources>
