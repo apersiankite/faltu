@@ -4,7 +4,9 @@
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/zoom_primary_color</item>
+        <item name="colorPrimaryDark">@color/zoom_primary_color</item>
     </style>
+
 
     <style name="text_view_style" parent="Base.TextAppearance.AppCompat">
         <item name="android:text">@string/default_text</item>
@@ -14,4 +16,15 @@
     </style>
 
     <dimen name="normal_text_size">16dp</dimen>
+
+    <style name="AppTheme.Toolbar" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="divider">@color/zoom_primary_color</item>
+        <item name="showDividers">beginning</item>
+
+    </style>
+
+    <style name="ActionBarTheme" parent="Widget.AppCompat.Toolbar">
+
+    </style>
+
 </resources>
