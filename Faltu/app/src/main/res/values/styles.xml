@@ -22,6 +22,15 @@
 
     </style>
 
+    <style name="AppTheme.Actionbar" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="divider">@color/white</item>
+        <item name="showDividers">beginning</item>
+    </style>
+
+    <style name="AppTheme.ActionBarTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+    </style>
+
     <style name="ActionBarTheme" parent="Widget.AppCompat.Toolbar">
 
     </style>
