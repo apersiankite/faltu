@@ -67,7 +67,7 @@ public class CustomProgressBarActivity extends AppCompatActivity implements View
             }
         }).show();
 
-        v.setBackgroundColor(getResources().getColor(R.color.snackbar_background_color));
+       // v.setBackgroundColor(getResources().getColor(R.color.snackbar_background_color));
 
 
     }

@@ -17,4 +17,5 @@
     <string name="show_action_undo">Undo</string>
     <string name="show_action_finishApp">Close App</string>
     <string name="show_action_finishActivity">Close Activity</string>
+    <string name="label_activity_testing_actionbar">ActionBar Activity</string>
 </resources>
