@@ -12,9 +12,9 @@
     <string name="default_text">Enter Details</string>
     <string name="button_submit">SUBMIT</string>
     <string name="title_activity_custom_progress_bar">CustomProgressBarActivity</string>
-    <string name="snackbarMessage">This is how snackbar works ..</string>
+    <string name="snackbarMessage">snackbar ..</string>
     <string name="button_show_snackbar">SHOW SNACKBAR</string>
     <string name="show_action_undo">Undo</string>
     <string name="show_action_finishApp">Close App</string>
-    <string name="show_action_finishActivity">Close Current Activity</string>
+    <string name="show_action_finishActivity">Close Activity</string>
 </resources>

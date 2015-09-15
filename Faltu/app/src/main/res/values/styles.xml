@@ -15,7 +15,6 @@
 
     </style>
 
-    <dimen name="normal_text_size">16dp</dimen>
 
     <style name="AppTheme.Toolbar" parent="ThemeOverlay.AppCompat.ActionBar">
         <item name="divider">@color/zoom_primary_color</item>
@@ -26,5 +25,7 @@
     <style name="ActionBarTheme" parent="Widget.AppCompat.Toolbar">
 
     </style>
+
+
 
 </resources>
