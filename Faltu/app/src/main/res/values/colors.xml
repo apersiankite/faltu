@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="black">#000000</color>
     <color name="zoom_primary_color">#2C333D</color>
     <color name="text_light_grey">#7F757F</color>
     <color name="transparent">#00000000</color>
@@ -7,4 +8,5 @@
     <color name="drawer_item_text">#2CEE3D</color>
     <color name="button_green">#4CAF50</color>
     <color name="edit_text_stroke_color">#7F757F</color>
+    <color name="text_weekday">#bdbdbd</color>
 </resources>

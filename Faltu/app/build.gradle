@@ -25,4 +25,5 @@ dependencies {
     compile project(':volley')
     compile 'com.facebook.android:facebook-android-sdk:4.0.0'
     compile 'com.android.support:design:23.0.0'
+    compile 'com.prolificinteractive:material-calendarview:0.8.1'
 }
