@@ -1,11 +1,13 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.zoomcar.prateek.faltu.activities.ComponentActivity">
 
-    <include layout="@layout/layout_toolbar"
-        android:id="@+id/app_toolbar"/>
+    <include
+        android:id="@+id/app_toolbar"
+        layout="@layout/layout_toolbar" />
 
     <TextView
         android:id="@+id/text_header"
@@ -20,19 +22,33 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/text_header"
-        android:padding="@dimen/app_padding">
+        android:padding="@dimen/app_padding"
+        app:errorEnabled="true">
 
-        <android.support.v7.widget.AppCompatEditText
+        <EditText
+            android:id="@+id/edit_first_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/custom_edit_text"
-            android:drawableLeft="@drawable/ic_action_username"
-            android:hint="@string/hint_enter_first_name">
-
-        </android.support.v7.widget.AppCompatEditText>
+            android:drawableLeft="@drawable/ic_action_username_normal"
+            android:drawableRight="@drawable/ic_action_username_normal"
+            android:hint="@string/hint_enter_first_name"
+            android:text="dbhasvhfbahdbna,bvdhkgvafjbshfb,sbdvfhjvsgh"
+            android:maxLines="1"
+            android:singleLine="true" />
 
 
     </android.support.design.widget.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/text_input_layout"
+        android:layout_alignBottom="@+id/text_input_layout"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:text="123123" />
 
 
     <android.support.design.widget.TextInputLayout
@@ -40,16 +56,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/text_input_layout"
-        android:padding="@dimen/app_padding">
+        android:padding="@dimen/app_padding"
+        app:errorEnabled="true">
 
-        <android.support.v7.widget.AppCompatEditText
+        <EditText
+            android:id="@+id/edit_last_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/custom_edit_text"
-            android:drawableLeft="@drawable/ic_action_username"
-            android:hint="@string/hint_enter_last_name">
+            android:drawableLeft="@drawable/ic_action_username_normal"
+            android:hint="@string/hint_enter_last_name"
+            android:maxLines="1"
+            android:singleLine="true">
 
-        </android.support.v7.widget.AppCompatEditText>
+        </EditText>
 
 
     </android.support.design.widget.TextInputLayout>

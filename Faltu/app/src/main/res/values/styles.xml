@@ -36,6 +36,13 @@
 
     </style>
 
+    <style name="MyCustomEditTextTheme" parent="Widget.AppCompat.EditText">
+        <item name="colorControlNormal">#FAFAFA</item>
+        <item name="colorControlHighlight">@color/com_facebook_blue</item>
+        <item name="colorAccent">@color/strokeColor</item>
+    </style>
+
+
     <style name="CalendarWeekDay" parent="TextAppearance.MaterialCalendarWidget.WeekDay">
         <item name="android:textSize">14sp</item>
         <item name="android:textColor">@color/text_weekday</item>
@@ -49,6 +56,7 @@
     <style name="CalendarDate" parent="TextAppearance.MaterialCalendarWidget.Date">
         <item name="android:textStyle">bold</item>
     </style>
+
 
 
 </resources>
