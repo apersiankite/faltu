@@ -43,5 +43,20 @@
     </style>
 
 
+    <style name="CalendarWeekDay" parent="TextAppearance.MaterialCalendarWidget.WeekDay">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/text_weekday</item>
+    </style>
+
+    <style name="CalendarHeader" parent="TextAppearance.MaterialCalendarWidget.Header">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="CalendarDate" parent="TextAppearance.MaterialCalendarWidget.Date">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
 
 </resources>
