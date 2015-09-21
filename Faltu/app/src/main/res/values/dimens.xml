@@ -5,4 +5,13 @@
     <dimen name="app_padding">5dp</dimen>
     <dimen name="normal_text_size">16dp</dimen>
     <dimen name="stroke_width_edit_text">3dp</dimen>
+    <dimen name="width">20dp</dimen>
+    <dimen name="slider_top_margin">100dp</dimen>
+    <dimen name="pointer_top_margin">65dp</dimen>
+    <dimen name="slider_left_margin">15dp</dimen>
+    <dimen name="slider_width">2dp</dimen>
+    <dimen name="slider_large_stand">40dp</dimen>
+    <dimen name="slider_small_stand">20dp</dimen>
+    <dimen name="slider_text_view_size">20dp</dimen>
+    <dimen name="width_slider_between_large_small_stand">30dp</dimen>
 </resources>

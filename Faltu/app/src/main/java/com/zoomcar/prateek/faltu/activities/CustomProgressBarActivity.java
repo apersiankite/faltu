@@ -3,6 +3,7 @@ package com.zoomcar.prateek.faltu.activities;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
@@ -27,10 +28,10 @@ public class CustomProgressBarActivity extends AppCompatActivity implements View
         mToolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(mToolbar);
         mShowSnackbar = (Button) findViewById(R.id.button_show_snackbar);
-        mProgressBarDrawable = getResources().getDrawable(R.drawable.custom_progress_bar);
+        mProgressBarDrawable = ContextCompat.getDrawable(this, R.drawable.custom_progress_bar);
         mShowSnackbar.setOnClickListener(this);
         progressBar = new ProgressBar(this);
-        progressBar.setProgressDrawable(getResources().getDrawable(R.drawable.custom_progress_bar));
+        progressBar.setProgressDrawable(ContextCompat.getDrawable(this, R.drawable.custom_progress_bar));
 
 
     }
@@ -67,7 +68,7 @@ public class CustomProgressBarActivity extends AppCompatActivity implements View
             }
         }).show();
 
-       // v.setBackgroundColor(getResources().getColor(R.color.snackbar_background_color));
+        // v.setBackgroundColor(getResources().getColor(R.color.snackbar_background_color));
 
 
     }

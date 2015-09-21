@@ -5,6 +5,7 @@
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/zoom_primary_color</item>
         <item name="colorPrimaryDark">@color/zoom_primary_color</item>
+        <item name="colorAccent">@color/button_green</item>
     </style>
 
 
@@ -33,6 +34,12 @@
 
     <style name="ActionBarTheme" parent="Widget.AppCompat.Toolbar">
 
+    </style>
+
+    <style name="MyCustomEditTextTheme" parent="Widget.AppCompat.EditText">
+        <item name="colorControlNormal">#FAFAFA</item>
+        <item name="colorControlHighlight">@color/com_facebook_blue</item>
+        <item name="colorAccent">@color/strokeColor</item>
     </style>
 
 
