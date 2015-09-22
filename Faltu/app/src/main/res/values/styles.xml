@@ -38,7 +38,6 @@
 
     <style name="MyCustomEditTextTheme" parent="Widget.AppCompat.EditText">
         <item name="colorControlNormal">#FAFAFA</item>
-        <item name="colorControlHighlight">@color/com_facebook_blue</item>
         <item name="colorAccent">@color/strokeColor</item>
     </style>
 

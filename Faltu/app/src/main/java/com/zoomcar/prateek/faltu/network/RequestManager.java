@@ -6,7 +6,6 @@ import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.HttpClientStack;
 import com.android.volley.toolbox.HttpStack;
 import com.android.volley.toolbox.Volley;
-import com.squareup.okhttp.OkHttpClient;
 
 /**
  * Created by Prateek on 22/09/15.
