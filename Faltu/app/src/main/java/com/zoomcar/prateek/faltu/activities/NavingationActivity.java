@@ -2,6 +2,7 @@ package com.zoomcar.prateek.faltu.activities;
 
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
+import android.support.design.widget.TabLayout;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -23,6 +24,7 @@ public class NavingationActivity extends AppCompatActivity implements Navigation
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mDrawerToggle;
     private  NavigationView navigationView;
+    private TabLayout mTabLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +33,11 @@ public class NavingationActivity extends AppCompatActivity implements Navigation
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("Navigation");
+        getSupportActionBar().setTitle("");
+
+        mTabLayout = (TabLayout) findViewById(R.id.tab_layout);
+        mTabLayout.addTab(mTabLayout.newTab().setText("ZOOM NOW"));
+        mTabLayout.addTab(mTabLayout.newTab().setText("ZOOM LATER"));
 
         navigationView = (NavigationView) findViewById(R.id.navigation_drawer);
         navigationView.setNavigationItemSelectedListener(this);

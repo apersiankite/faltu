@@ -15,7 +15,13 @@
         <activity android:name=".activities.SampleLoginActivity" />
         <activity
             android:name=".activities.NavingationActivity"
-            android:label="@string/app_name"></activity>
+            android:label="@string/app_name">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
 
         <activity
             android:name=".activities.ComponentActivity"
@@ -45,11 +51,20 @@
         <activity android:name=".activities.CalendarActivity"></activity>
 
         <activity android:name=".activities.FBLoginActivity">
-            <intent-filter>
-                <category android:name="android.intent.category.LAUNCHER" />
 
-                <action android:name="android.intent.action.MAIN" />
-            </intent-filter>
+        </activity>
+
+        <activity android:name=".activities.TestFBLoginActivity">
+
+        </activity>
+
+        <activity android:name=".activities.SampleCardActivity">
+
+        </activity>
+
+        <activity android:name=".activities.ZoomMainActivity">
+
+
         </activity>
 
         <meta-data
@@ -61,6 +76,7 @@
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
     </application>
 
 </manifest>

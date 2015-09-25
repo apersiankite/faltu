@@ -12,7 +12,19 @@
         android:orientation="vertical">
 
         <!-- Toolbar instead of ActionBar so the drawer can slide on top -->
-        <include layout="@layout/layout_toolbar" />
+        <include layout="@layout/layout_main_toolbar" />
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabMode="fixed"
+            app:tabGravity="fill"
+            app:tabSelectedTextColor="@color/white"
+            app:tabIndicatorColor="@color/button_green"
+            app:tabIndicatorHeight="4dp"
+            app:tabTextAppearance="@style/ZoomTabText"
+            android:background="@color/zoom_primary_color" />
 
         <!-- Real content goes here -->
         <FrameLayout
