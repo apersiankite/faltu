@@ -5,40 +5,41 @@
     android:layout_height="match_parent">
 
     <TextView
+        android:id="@+id/text_view_hours"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
+        android:layout_marginTop="@dimen/width"
         android:gravity="center_horizontal"
-        android:id ="@+id/text_view_hours"
-        android:textStyle="bold"
+        android:text="time"
         android:textSize="@dimen/slider_text_view_size"
-        android:layout_marginTop="@dimen/width"/>
+        android:textStyle="bold" />
 
     <View
-        android:layout_width="wrap_content"
         android:id="@+id/slider_line"
+        android:layout_width="wrap_content"
         android:layout_height="2dp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         android:layout_marginTop="100dp"
         android:background="@color/text_light_grey" />
 
-    
+
     <ImageView
         android:id="@+id/image_slider"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/slider_pointer1"/>
+        android:background="@drawable/slider_pointer1" />
 
 
     <HorizontalScrollView
         android:id="@+id/horizontal_scroll_view"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:scrollbars="none"
         android:paddingLeft="15dp"
-        android:paddingRight="15dp">
+        android:paddingRight="15dp"
+        android:scrollbars="none">
 
         <RelativeLayout
             android:id="@+id/root_horizontal_scroll"
@@ -46,17 +47,16 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-          <!--  <ImageView
-                android:id="@+id/abc"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/slider_pointer"
-                android:layout_marginLeft="50dp"
-                android:layout_marginTop="100dp" />-->
+            <!--  <ImageView
+                  android:id="@+id/abc"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:background="@drawable/slider_pointer"
+                  android:layout_marginLeft="50dp"
+                  android:layout_marginTop="100dp" />-->
 
         </RelativeLayout>
     </HorizontalScrollView>
-
 
 
 </RelativeLayout>

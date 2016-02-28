@@ -4,6 +4,7 @@ import android.graphics.Color;
 import android.graphics.Point;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.Display;
 import android.view.Gravity;
 import android.view.Menu;
@@ -34,6 +35,7 @@ public class HorizontalSliderActivity extends AppCompatActivity implements ViewT
         mDisplay = getWindowManager().getDefaultDisplay();
         mSize = new Point();
         mDisplay.getSize(mSize);
+        Log.d("prateek","size point is : "+mSize);
         setContentView(R.layout.activity_horizontal_slider);
         mTextViewForHours = (TextView) findViewById(R.id.text_view_hours);
         mImageSlider = (ImageView) findViewById(R.id.image_slider);
@@ -133,6 +135,7 @@ public class HorizontalSliderActivity extends AppCompatActivity implements ViewT
         int x = mHorizontalScrollView.getScrollX();
         int width = getResources().getDimensionPixelSize(R.dimen.width_slider_between_large_small_stand);
         System.out.println(x + "  " + width);
+
 
         if (x % (width) == 0) {
             double time = (0.5 * (x / (width)));

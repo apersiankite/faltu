@@ -5,7 +5,8 @@
     android:layout_height="wrap_content"
     android:background="@color/zoom_primary_color"
     android:orientation="vertical"
-    android:padding="8dp">
+    android:padding="8dp"
+    app:layout_scrollFlags="scroll|enterAlways">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
